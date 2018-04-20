@@ -1,13 +1,10 @@
 package client;
 
 import java.awt.EventQueue;
-
 import client.controller.ClientController;
 
 /**
  * Main class that is invoked when the project is run.
- * @SER516 Project3_Team03
- * @Version 1.0
  */
 public class ClientMain {	
 
@@ -25,5 +22,4 @@ public class ClientMain {
 			}
 		});
 	}
-
 }
