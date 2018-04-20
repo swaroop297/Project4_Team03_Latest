@@ -64,7 +64,7 @@ public class ExpressiveController {
 		rightSmirkGraph = new JPanel();
 		laughGraph = new JPanel();
 
-		expressiveView = new ExpressiveView(facePanel, graphPanel, blinkGraph, rightWinkGraph, letWinkGraph, lookLeftGraph,
+		expressiveView = new ExpressiveView(facePanel, graphPanel, blinkGraph, rightWinkGraph, leftWinkGraph, lookLeftGraph,
 				lookRightGraph, furrowGraph, raiseGraph, smileGraph, clenchGraph, leftSmirkGraph, rightSmirkGraph,
 				laughGraph);
 
