@@ -3,14 +3,14 @@ package client.constants;
 import java.awt.Color;
 
 import utility.Constants;
+
 /**
- * ClientConstants holds values that are to be used
- * by the client program.
+ * ClientConstants holds values that are to be used by the client program.
  */
 public class ClientConstants extends Constants {
-    public static volatile int CHANNELS = 2;
-    public static final int MAX_RETRIES = 10;
-    public static volatile int DEFAULT_FREQ = 2;
+	public static volatile int CHANNELS = 2;
+	public static final int MAX_RETRIES = 10;
+	public static volatile int DEFAULT_FREQ = 2;
 	public static final String MEDITATION = "Meditation";
 	public static final String ENGAGEMENT = "Engagement";
 	public static final String FRUSTATION = "Frustation";
@@ -27,6 +27,6 @@ public class ClientConstants extends Constants {
 	public static Color engagementColor = Color.RED;
 	public static Color frustationColor = Color.MAGENTA;
 	public static Color relaxationColor = Color.YELLOW;
-	public static Color excitementstColor = Color.BLUE;
-	public static Color excitementltColor = Color.BLACK;
+	public static Color excitementShortTermColor = Color.BLUE;
+	public static Color excitementLongTermColor = Color.BLACK;
 }
