@@ -1,10 +1,10 @@
 package client.view;
 
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -15,11 +15,12 @@ import client.controller.ChangeColorController;
 
 /**
  * View for the Affective Section of the client
+ * 
  * @SER516 Project3_Team03
  * @Version 1.0
  */
 public class AffectiveView extends JPanel {
-	
+
 	private static final long serialVersionUID = 1L;
 	private ColorSelectorButton meditationButton;
 	private ColorSelectorButton engagementButton;
@@ -66,7 +67,8 @@ public class AffectiveView extends JPanel {
 		gridBagConstraints.gridx = 3;
 		gridBagConstraints.gridy = 1;
 
-		excitementstButton = new ColorSelectorButton(ClientConstants.excitementstColor, ClientConstants.EXCITEMENTST);
+		excitementstButton = new ColorSelectorButton(ClientConstants.excitementShortTermColor,
+				ClientConstants.EXCITEMENTST);
 		new ChangeColorController(excitementstButton);
 		colPanel.add(excitementstButton, gridBagConstraints);
 
@@ -80,10 +82,10 @@ public class AffectiveView extends JPanel {
 		gridBagConstraints.gridx = 3;
 		gridBagConstraints.gridy = 2;
 
-		excitementltButton = new ColorSelectorButton(ClientConstants.excitementltColor, ClientConstants.EXCITEMENTLT);
+		excitementltButton = new ColorSelectorButton(ClientConstants.excitementLongTermColor,
+				ClientConstants.EXCITEMENTLT);
 		new ChangeColorController(excitementltButton);
 		colPanel.add(excitementltButton, gridBagConstraints);
-
 
 		this.add(colPanel);
 
