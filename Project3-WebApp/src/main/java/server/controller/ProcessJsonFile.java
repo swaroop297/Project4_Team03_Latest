@@ -56,7 +56,6 @@ public class ProcessJsonFile {
 		FaceExpressionData faceExpressionData = new FaceExpressionData();
 		FaceAffectiveData faceAffectiveData = new FaceAffectiveData();
 		FaceData faceData = new FaceData();
-		
 		faceExpressionData.setRaiseBrow(Double.parseDouble(input[0]));
 		faceExpressionData.setFurrowBrow(Double.parseDouble(input[1]));
 		faceExpressionData.setSmile(Double.parseDouble(input[2]));
@@ -82,7 +81,6 @@ public class ProcessJsonFile {
 		faceData.setTimeElapsed(Double.parseDouble(input[18]));
 		faceData.setFaceAffectiveData(faceAffectiveData);
 		faceData.setFaceExpressionData(faceExpressionData);
-		
 		return faceData;
 	}
 	
@@ -91,7 +89,6 @@ public class ProcessJsonFile {
 		try {
 			processJsonFile.processFile("sample.json");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

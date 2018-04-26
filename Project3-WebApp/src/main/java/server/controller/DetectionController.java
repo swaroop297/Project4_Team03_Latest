@@ -2,7 +2,6 @@ package server.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -11,16 +10,12 @@ import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-
 import utility.FaceAffectiveData;
 import utility.FaceData;
 import utility.FaceExpressionData;
 
 /**
  * Controller for the detection section of the server
- * 
- * @SER516 Project3_Team03
- * @Version 1.0
  */
 @SuppressWarnings("rawtypes")
 public class DetectionController {

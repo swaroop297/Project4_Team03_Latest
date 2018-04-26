@@ -6,12 +6,8 @@ import utility.FaceData;
 
 /**
  * Controller for sending multiple values in certain time durations
- * 
- * @SER516 Project3_Team03
- * @Version 1.0
  */
 public class ThreadController implements Runnable {
-
 	static Thread th;
 	DetectionPanel dpanel ; 
 	Double emointerval = 1.0;
@@ -26,11 +22,9 @@ public class ThreadController implements Runnable {
 	public void run() {
 		while(true){
 			timeElapsed += emointerval;
-			//System.out.println(timeElapsed);
 			try {
 				Thread.sleep((long) (1000 * emointerval));
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			dpanel.timeElapsedTextbox.setText(timeElapsed+"");
@@ -52,7 +46,6 @@ public class ThreadController implements Runnable {
 	 * Starts the thread
 	 */
 	public static void start(){
-	
 		th.start();
 	}
 }
