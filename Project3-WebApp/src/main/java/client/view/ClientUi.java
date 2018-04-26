@@ -112,8 +112,5 @@ public class ClientUi extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		facedata.tocsv();
-
-		// throw new UnsupportedOperationException("Not supported yet."); //To change
-		// body of generated methods, choose Tools | Templates.
 	}
 }
