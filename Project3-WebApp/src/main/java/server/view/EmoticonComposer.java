@@ -7,6 +7,7 @@ import java.io.File;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -31,6 +32,7 @@ public class EmoticonComposer extends JFrame implements WindowListener {
 	private JMenuBar menuBar;
 	private JMenu mnNewMenu;
 	private JMenuItem mntmAbout;
+	private JMenu mnUpload;
 	JMenuItem mntmQuit;
 	Thread inputThread;
 	boolean running = false;
@@ -73,6 +75,7 @@ public class EmoticonComposer extends JFrame implements WindowListener {
 		tabbedPane_1.setBounds(12, 243, 489, 552);
 		this.getContentPane().add(tabbedPane_1);
 
+		
 		dpanel = new DetectionPanel();
 		dpanel.setBorder(new MatteBorder(4, 4, 4, 4, (Color) Color.BLACK));
 		tabbedPane_1.addTab("DETECTION", null, dpanel, null);
@@ -94,7 +97,13 @@ public class EmoticonComposer extends JFrame implements WindowListener {
 		mntmQuit = new JMenuItem("Quit");
 		mnNewMenu.add(mntmQuit);
 
-		new MenuController(mntmAbout, mntmQuit);
+		JButton btnSend;
+		btnSend = new JButton("Upload CSV File");
+		btnSend.setBounds(337, 58, 119, 25);
+		menuBar.add(btnSend);
+		
+		System.out.println("adding upload button");
+		new MenuController(mntmAbout, mntmQuit, btnSend);
 		this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		addWindowListener(this);
 		
