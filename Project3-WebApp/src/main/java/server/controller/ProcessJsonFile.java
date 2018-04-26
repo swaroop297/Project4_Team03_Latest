@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import utility.FaceAffectiveData;
 import utility.FaceData;
 import utility.FaceExpressionData;
@@ -33,7 +32,6 @@ public class ProcessJsonFile {
 		FaceExpressionData faceExpressionData = new FaceExpressionData();
 		FaceAffectiveData faceAffectiveData = new FaceAffectiveData();
 		FaceData faceData = new FaceData();
-		
 		faceExpressionData.setRaiseBrow(Double.parseDouble(input[0]));
 		faceExpressionData.setFurrowBrow(Double.parseDouble(input[1]));
 		faceExpressionData.setSmile(Double.parseDouble(input[2]));
@@ -59,7 +57,6 @@ public class ProcessJsonFile {
 		faceData.setTimeElapsed(Double.parseDouble(input[18]));
 		faceData.setFaceAffectiveData(faceAffectiveData);
 		faceData.setFaceExpressionData(faceExpressionData);
-		
 		return faceData;
 	}
 	
@@ -68,7 +65,6 @@ public class ProcessJsonFile {
 		try {
 			processJsonFile.processFile();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
