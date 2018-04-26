@@ -32,4 +32,5 @@ public class ServerMainHandler {
 	public static void close(){
 		emoticon.dispatchEvent(new WindowEvent(emoticon, WindowEvent.WINDOW_CLOSING));
 	}
+	
 }
