@@ -68,12 +68,6 @@ public class ClientUi extends JFrame implements ActionListener {
 		menuBar.setBounds(0, 0, 698, 22);
 		panel.add(menuBar);
 
-		JButton btnDownload;
-		btnDownload = new JButton("Download");
-		btnDownload.setBounds(200, 58, 119, 25);
-		menuBar.add(btnDownload);
-		btnDownload.addActionListener(this);
-
 		final JMenu mnFile = new JMenu("File");
 		menuBar.add(mnFile);
 
@@ -82,6 +76,12 @@ public class ClientUi extends JFrame implements ActionListener {
 
 		final JMenu mntmConnection = new JMenu("Connection");
 		mnFile.add(mntmConnection);
+		
+		JButton btnDownload;
+		btnDownload = new JButton("Download");
+		btnDownload.setBounds(200, 58, 119, 25);
+		menuBar.add(btnDownload);
+		btnDownload.addActionListener(this);
 
 		final JMenuItem serverConsole = new JMenuItem("Open Server");
 		mntmApplication.add(serverConsole);
