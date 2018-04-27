@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.File;
-
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -23,8 +22,6 @@ import server.service.FaceServer;
 
 /**
  * View for the Server.
- * @SER516 Project3_Team03
- * @Version 1.0
  */
 @SuppressWarnings("serial")
 public class EmoticonComposer extends JFrame implements WindowListener {
@@ -44,9 +41,10 @@ public class EmoticonComposer extends JFrame implements WindowListener {
 	public EmoticonComposer() {
 
 		try {
-			UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
-		} catch (Exception e) {
-		}
+	            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+	          } catch (Exception e) {
+	            System.err.println("Look and feel not set.");
+	          }
 		initialize();
 	}
 
