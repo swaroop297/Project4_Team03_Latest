@@ -76,7 +76,7 @@ public class ClientUi extends JFrame implements ActionListener {
 
 		final JMenu mntmConnection = new JMenu("Connection");
 		mnFile.add(mntmConnection);
-		
+
 		JButton btnDownload;
 		btnDownload = new JButton("Download");
 		btnDownload.setBounds(200, 58, 119, 25);
@@ -109,11 +109,11 @@ public class ClientUi extends JFrame implements ActionListener {
 		this.facedata = faceData;
 	}
 
-	@Override
 	/**
 	 * Action listener for download button, which on click will download the state
 	 * of expressions as .csv file.
 	 */
+	@Override
 	public void actionPerformed(ActionEvent e) {
 		facedata.tocsv();
 	}
