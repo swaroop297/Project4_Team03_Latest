@@ -110,6 +110,10 @@ public class ClientUi extends JFrame implements ActionListener {
 	}
 
 	@Override
+	/**
+	 * Action listener for download button, which on click will download the state
+	 * of expressions as .csv file.
+	 */
 	public void actionPerformed(ActionEvent e) {
 		facedata.tocsv();
 	}

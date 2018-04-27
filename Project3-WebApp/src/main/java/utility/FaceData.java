@@ -47,6 +47,10 @@ public class FaceData {
 				+ '}';
 	}
 
+	/**
+	 * Method to convert Face Data values into a csv file. File will be in Downloads
+	 * folder of user's machine.
+	 */
 	public void tocsv() {
 		PrintWriter pw;
 		try {
