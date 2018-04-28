@@ -51,7 +51,7 @@ public class ProcessJsonFile {
 		}
 	}
 	
-	public FaceData setValuesToModalAndPanel(String [] input) {
+	public void setValuesToModalAndPanel(String [] input) {
 
 		FaceExpressionData faceExpressionData = new FaceExpressionData();
 		FaceAffectiveData faceAffectiveData = new FaceAffectiveData();
@@ -81,7 +81,8 @@ public class ProcessJsonFile {
 		faceData.setTimeElapsed(Double.parseDouble(input[18]));
 		faceData.setFaceAffectiveData(faceAffectiveData);
 		faceData.setFaceExpressionData(faceExpressionData);
-		return faceData;
+		FaceServer newFaceServer = new FaceServer();
+         	newFaceServer.put(faceData); 
 	}
 	
 	public static void main(String args[]) {
